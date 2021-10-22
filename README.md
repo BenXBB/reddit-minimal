@@ -10,3 +10,4 @@ This is a portfolio project assigned from Codecademy. This project was to practi
 * VS Code
 * GitHub version control
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd20b8e5-b28a-44f0-b968-4970d2de6744/deploy-status)](https://app.netlify.com/sites/reddit-minimal3000/deploys)
