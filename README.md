@@ -1,0 +1,12 @@
+# Portfolio Project
+
+This is a portfolio project assigned from Codecademy. This project was to practice and use the skills learnt in Javascript and React-Redux to create a minimal UI version of Reddit.
+
+## Built with
+
+* React-Redux
+* CSS
+* JavaScript
+* VS Code
+* GitHub version control
+

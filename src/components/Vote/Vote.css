@@ -1,0 +1,37 @@
+h2 {
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.cardVote {
+    margin-right: 2%;
+    font-size: 1.2rem;
+}
+
+.voteArrows {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media only screen and (max-width: 715px) {
+    .cardVote {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 1.1rem;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .voteArrows {
+        font-size: 1rem;
+    }
+
+  }
