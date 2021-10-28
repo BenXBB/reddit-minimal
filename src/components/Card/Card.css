@@ -90,18 +90,19 @@ li {
     margin: 10px 0 0 33px;
 }
 
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 800px) { /* for iPads */
     h1 {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         margin-top: 0;
     }
 
+    .card {
+        margin: 2%;
+        width: 350px;
+    }
     li {
         font-size: 0.8rem;
     }
-
-    .card {
-        margin: 3%;
-        width: 350px;
-    }
   }
+
+
