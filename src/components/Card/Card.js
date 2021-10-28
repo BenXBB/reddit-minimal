@@ -22,14 +22,14 @@ function Card(props) {
     }
 
     return (
-        <div className="card">
-            
+        <div className="card">            
             <div className="cardContent">
                 <Vote 
                 id="vote"
                 votes={props.article.ups}
                 />
                 <div className="cardHeader">
+                    <div className="cardSubreddit">r/{props.article.subreddit}</div>
                     <h1 onClick={toggleComments}>{props.article.title}</h1>
                     <p>{props.article.selftext}</p>
                     {((props.article.thumbnail === "self") ? // ternary operator that detects if thumbnail is included
