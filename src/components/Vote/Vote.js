@@ -2,17 +2,19 @@ import React from "react";
 import { useState } from "react";
 import "./Vote.css";
 
-function Vote() {
+function Vote(props) {
 
-    const [vote, changeVote] = useState(0);
+    const [topVote, setTopVote] = useState({color: "black"}) 
+    const [bottomVote, setBottomVote] = useState({color: "black"})
+    const [vote, setVote] = useState({color: "black"})
+
     const [userHasVoted, changeUserHasVoted] = useState(false);
 
     function upVote() {
         if (userHasVoted === false) {
-            changeVote(vote+1);
-            document.getElementById("voteUp").style.color = "green";
-            document.getElementById("numberOfVotes").style.color = "green";
-            document.getElementById("voteDown").style.color = "black";
+            setTopVote({color: "green"});
+            setVote({color: "green"});
+            setBottomVote({color: "black"});
             changeUserHasVoted(true);
         } else if (userHasVoted === true) {
             alert("You have already voted on this post");
@@ -21,10 +23,9 @@ function Vote() {
 
     function downVote() {
         if (userHasVoted === false) {
-            changeVote(vote-1);
-            document.getElementById("voteDown").style.color = "red";
-            document.getElementById("numberOfVotes").style.color = "red";
-            document.getElementById("voteUp").style.color = "black";
+            setTopVote({color: "black"});
+            setVote({color: "red"});
+            setBottomVote({color: "red"});
             changeUserHasVoted(true);
         } else if (userHasVoted === true) {
             alert("You have already voted on this post")
@@ -33,11 +34,11 @@ function Vote() {
 
     return (
         <div className="cardVote">
-            <div className="voteArrows" id="voteUp" onClick={upVote}>↑</div>
+            <div style={topVote} className="voteArrows" id="voteUp" onClick={upVote}>↑</div>
             <hr />
-            <h2 id="numberOfVotes">{vote}</h2>
+            <h2 style={vote} id="numberOfVotes">{props.votes}</h2>
             <hr />
-            <div className="voteArrows" id="voteDown" onClick={downVote}>↓</div> 
+            <div style={bottomVote} className="voteArrows" id="voteDown"onClick={downVote}>↓</div> 
         </div>
     )
 }

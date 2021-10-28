@@ -3,14 +3,16 @@
     background-color: rgb(226, 226, 226);
     border-radius: 15px;
     padding: 4%;
-    margin: 5%;
+    margin: 1%;
     color: black;
+    width: 500px;
 }
 
 .cardContent {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
   }
 
 h1 {
@@ -21,11 +23,13 @@ h1 {
 
 .cardHeader {
     text-align: left;
+    max-width: 300px;
 }
 
 .exampleImage {
     width: 100%;
-    max-height: 850px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 hr {
@@ -84,5 +88,10 @@ li {
 
     li {
         font-size: 0.8rem;
+    }
+
+    .card {
+        margin: 3%;
+        width: 350px;
     }
   }

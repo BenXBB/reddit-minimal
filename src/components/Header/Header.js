@@ -1,12 +1,12 @@
 import "./Header.css"
 
-function Header() {
+function Header(props) {
     return (
         <div className="header">
             <img alt="reddit icon" src="https://cdn-icons-png.flaticon.com/512/52/52053.png" />
             REDDIT<span>Minimal</span>
             <form>
-                <input id="searchField" type="text" placeholder="Search Posts" />
+                <input id="searchField" type="text" placeholder="Search Reddit" />
                 <button type="button">
                     <img id="searchButton" alt="search button" src="https://cdn-icons-png.flaticon.com/512/622/622669.png" />
                 </button>
