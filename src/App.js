@@ -12,9 +12,9 @@ function App() {
       fetch("https://www.reddit.com/r/" + subreddit + ".json").then(res => {
           res.json().then(data => {
               setHomePosts(data.data.children);
-              // console.log(homePosts) Used to map the API to components
+              console.log(homePosts) // Used to map the API to components
           });
-      }) 
+      }) // eslint-disable-next-line
   }, [subreddit]) // Dependency array
 
   function getUserSearchQuery() {
@@ -24,7 +24,7 @@ function App() {
   function keyDownSearchQuery(event) {
     if (event.key === "Enter") {
       return setSubreddit(document.getElementById("searchField").value);
-    }
+    } 
   }
 
   return (

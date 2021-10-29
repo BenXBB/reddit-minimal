@@ -160,7 +160,6 @@ img {
       align-self: flex-start;
       padding: 2px 25px;
       /* box-shadow: 100px 0px black;  Fixes blank space to right of banner */
-      width: 100%;
       flex-direction: column;
     }
 

@@ -20,6 +20,11 @@ function Card(props) {
             commentSelect.style.visibility = "hidden";
         }
     }
+    // var for link to post when user clicks heading
+    var linkToRedditURL = "https://www.reddit.com/" + props.article.permalink;
+
+    // Shortened string title
+    var shortenedTitle = props.article.title.substring(0, 120);
 
     return (
         <div className="card">            
@@ -30,7 +35,7 @@ function Card(props) {
                 />
                 <div className="cardHeader">
                     <div className="cardSubreddit">r/{props.article.subreddit}</div>
-                    <h1 onClick={toggleComments}>{props.article.title}</h1>
+                    <a href={linkToRedditURL} rel="noreferrer" target="_blank"><h1>{shortenedTitle}</h1><span>...more</span></a>
                     <p>{props.article.selftext}</p>
                     {((props.article.thumbnail === "self") ? // ternary operator that detects if thumbnail is included
                     ""
