@@ -1,0 +1,10 @@
+.icon {
+    width: 50px;
+}
+
+.CommunityCard {
+    height: 55px;
+    align-content: center;
+    text-align: center;
+    display: inline-flex;
+}

@@ -26,7 +26,6 @@
     flex-wrap: wrap;
     background-color: #df4a00;
     padding: 35px 60px;
-    box-shadow: 10px 10px;
 }
 
   #breadcrumbs {
@@ -34,23 +33,21 @@
     flex-wrap: wrap;
     background-color: rgb(0, 0, 0);
     padding: 2px 90px;
-    box-shadow: 10px 10px;
     font-size: 1.3rem;
     color: rgb(160, 160, 160);
     font-weight: lighter;
   }
 
-form {
-    display:flex;
-    flex-direction:row;
+  form {
+    display: flex;
   }
 
 input {
     margin-left: 25px;
     border: none;
     text-align: center;
-    width: 33%;
-    min-width: 300px;
+    width: 25%;
+    min-width: 130px;
     min-height: 40px;
     background-color: #bdbbbb;
     border-radius: 15px 0px 0px 15px;
@@ -75,11 +72,45 @@ button {
     border: none;
     background-color: #bdbbbb;
     border-radius: 0px 15px 15px 0px;
-    box-shadow: 2px 2px 5px rgb(58, 58, 58);  
+    box-shadow: 2px 2px 5px rgb(58, 58, 58);
+    height: 45px;
 }
 
 #searchButton {
     width: 25px;
+}
+
+#burgericon {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  justify-content: space-evenly;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #df4a00;
+  border-radius: 7px;
+  width: 200px;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+/* Title for the burger menu icon */
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  align-self: center;
+}
+
+#topCommunities {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: none;
+  visibility: hidden;
+}
+
+.communityList {
+  border: 2.5px solid rgb(0, 0, 0);
 }
 
 body {
@@ -101,7 +132,7 @@ img {
 
 @media only screen and (max-width: 800px) { /* for iPads */
   .header {
-      padding: 20px 80px;
+      padding: 20px 20px;
       margin: auto;
       text-align: center;
       padding-bottom: 20px;
@@ -114,7 +145,7 @@ img {
 
 @media only screen and (max-width: 715px) {
     .header {
-        padding: 20px 100px;
+        padding: 20px 0px;
         margin: auto;
         text-align: center;
         padding-bottom: 20px;
@@ -137,12 +168,13 @@ img {
   @media only screen and (max-width: 540px) {
     .header {
         flex-wrap: wrap;
-        padding: 5px 30px;
+        padding: 5px 0px;
         margin: auto;
         text-align: center;
         padding-bottom: 15px;
         font-size: 1.5rem;
         box-shadow: 0px 0px;
+        min-width: 40%;
     }
     #searchField input {
         margin: 0;
@@ -171,14 +203,9 @@ img {
         padding-bottom: 15px;
         font-size: 1.7rem;
         box-shadow: 0px 0px;
-        width: 400px;
     }
-
-    #breadcrumbs {
-      box-shadow: 100px 0px black; /* Fixes blank space to right of banner */
-    }
-
   }
+
 
   @media only screen and (max-height: 600px) {
     .header {

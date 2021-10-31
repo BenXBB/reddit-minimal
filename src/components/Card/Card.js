@@ -26,6 +26,7 @@ function Card(props) {
     // Shortened string title
     var shortenedTitle = props.article.title.substring(0, 120);
 
+
     return (
         <div className="card">            
             <div className="cardContent">
