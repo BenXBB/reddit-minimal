@@ -28,12 +28,12 @@ function Card(props) {
 
 
     return (
-        <div className="card">            
+        <div className="card">          
             <div className="cardContent">
                 <Vote 
                 id="vote"
                 votes={props.article.ups}
-                />
+                />  
                 <div className="cardHeader">
                     <div className="cardSubreddit">r/{props.article.subreddit}</div>
                     <a href={linkToRedditURL} rel="noreferrer" target="_blank"><h1>{shortenedTitle}</h1><span>...more</span></a>

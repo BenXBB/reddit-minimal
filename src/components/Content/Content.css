@@ -1,3 +1,44 @@
+.menu-card-content-container {
+  display: inline-flex;
+  width: 95%;
+  align-items: flex-start;
+}
+
+#burgericon {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #5e5e5e;
+  border-radius: 7px;
+  width: 265px;
+  text-align: left;
+  margin-top: 10px;
+  margin-right: 80px;
+}
+
+#topCommunities {
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.communityList {
+  border: 2.5px solid rgb(0, 0, 0);
+  margin-bottom: 5px;
+  border-radius: 15px;
+  background-color: black;
+  width: 200px;
+  align-content: space-around;
+}
+.communityList:hover {
+  background-color: #df4a00;
+}
+
 .content-container {
     background-color: #171a1f;
     display: flex;
@@ -13,5 +54,15 @@
   @media only screen and (min-width: 725px) {
     .content-container {
       flex-wrap: nowrap;
+    }
+  }
+
+  @media only screen and (max-width: 800px) { /* for iPads */
+    #topCommunities {
+      flex-direction: row;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      display: none;
+      visibility: hidden;
     }
   }
