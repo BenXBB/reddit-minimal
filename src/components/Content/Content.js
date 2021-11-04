@@ -18,13 +18,10 @@ function Content(props) {
 
 // Vars for storing the hot, popular and trending icons
   var hotIcon = "https://cdn-icons.flaticon.com/png/512/2319/premium/2319286.png?token=exp=1635969908~hmac=72f5228b0ea4f29aa00a796c7695bb76";
-  var hotIconColor = "https://cdn-icons.flaticon.com/png/512/2323/premium/2323837.png?token=exp=1635970459~hmac=904129993245cbdda11b87bb802772a3";
   var activeHot = hotIcon;
   var trendingIcon = "https://cdn-icons.flaticon.com/png/512/1350/premium/1350367.png?token=exp=1635970594~hmac=ccc5df86ef26393139986d53b8f54cbd";
-  var trendingIconColor = "https://cdn-icons.flaticon.com/png/512/1350/premium/1350418.png?token=exp=1635970598~hmac=fca74b346dfe01eae8836c2304eabac8";
   var activeTrending = trendingIcon;
   var popularIcon = "https://cdn-icons-png.flaticon.com/512/1879/1879440.png";
-  var popularIconColor = "https://cdn-icons-png.flaticon.com/512/1879/1879447.png";
   var activePopular = popularIcon;
 
 
