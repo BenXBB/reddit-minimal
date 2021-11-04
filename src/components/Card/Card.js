@@ -42,7 +42,7 @@ function Card(props) {
                     ""
                     : 
                     <img 
-                    alt={props.article.title} 
+                    alt={"..."} 
                     src={props.article.thumbnail} 
                     className="exampleImage" 
                     />)}

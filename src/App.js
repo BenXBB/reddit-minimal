@@ -54,6 +54,16 @@ function App() {
     return setSubreddit("TodayILearned");
   }
 
+  function getHot() {
+    return setSubreddit("Best");
+  }
+  function getTrending() {
+    return setSubreddit("Trend");
+  }
+  function getPopular() {
+    return setSubreddit("Popular");
+  } 
+
   return (
     <div className="App">
       
@@ -72,6 +82,9 @@ function App() {
 
       <Content 
       homePosts={homePosts} 
+      getHot={getHot}
+      getTrending={getTrending}
+      getPopular={getPopular}
       getAskReddit={getAskReddit}
       getMovies={getMovies}
       getGaming={getGaming}

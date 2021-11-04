@@ -16,9 +16,27 @@ function Content(props) {
     }
   }
 
+// Vars for storing the hot, popular and trending icons
+  var hotIcon = "https://cdn-icons.flaticon.com/png/512/2319/premium/2319286.png?token=exp=1635969908~hmac=72f5228b0ea4f29aa00a796c7695bb76";
+  var hotIconColor = "https://cdn-icons.flaticon.com/png/512/2323/premium/2323837.png?token=exp=1635970459~hmac=904129993245cbdda11b87bb802772a3";
+  var activeHot = hotIcon;
+  var trendingIcon = "https://cdn-icons.flaticon.com/png/512/1350/premium/1350367.png?token=exp=1635970594~hmac=ccc5df86ef26393139986d53b8f54cbd";
+  var trendingIconColor = "https://cdn-icons.flaticon.com/png/512/1350/premium/1350418.png?token=exp=1635970598~hmac=fca74b346dfe01eae8836c2304eabac8";
+  var activeTrending = trendingIcon;
+  var popularIcon = "https://cdn-icons-png.flaticon.com/512/1879/1879440.png";
+  var popularIconColor = "https://cdn-icons-png.flaticon.com/512/1879/1879447.png";
+  var activePopular = popularIcon;
+
+
     return (
-        <div className="menu-card-content-container">
+        <div className="menu-card-content-container">    
             <div id="burgericon">
+            <ul className="hot-trending-popular">
+            <li className="communityList" onClick={props.getHot}><CommunityCard topic="Hot" icon={activeHot} /></li>
+            <li className="communityList" onClick={props.getTrending}><CommunityCard topic="Trending" icon={activeTrending} /></li>
+            <li className="communityList" onClick={props.getPopular}><CommunityCard topic="Popular" icon={activePopular} /></li>
+            </ul> 
+            <br />
                 <img onClick={toggleTopCommunities} alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTE4LjgzMzMzLDQ3LjA4MzMzdjE4LjgzMzMzaDE4OC4zMzMzM3YtMTguODMzMzN6TTE4LjgzMzMzLDEwMy41ODMzM3YxOC44MzMzM2gxODguMzMzMzN2LTE4LjgzMzMzek0xOC44MzMzMywxNjAuMDgzMzN2MTguODMzMzNoMTg4LjMzMzMzdi0xOC44MzMzM3oiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="/>
                 <ul id="topCommunities">
                     <li className="communityList" onClick={props.getAskReddit}><CommunityCard topic="r/AskReddit" icon="https://styles.redditmedia.com/t5_2qh1i/styles/communityIcon_tijjpyw1qe201.png?width=256&s=4e76eadc662b8155a93d4d7487a6d3acb35f4334" /></li>

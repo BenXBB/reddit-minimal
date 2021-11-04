@@ -25,6 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #df4a00;
+    width: 100%;
     padding: 35px 60px;
 }
 
@@ -36,6 +37,7 @@
     font-size: 1.3rem;
     color: rgb(160, 160, 160);
     font-weight: lighter;
+    width: 100%;
   }
 
   form {
@@ -104,9 +106,14 @@ img {
       margin: auto;
       text-align: center;
       padding-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
   }
   input {
       margin: 0;
+  }
+  #breadcrumbs {
+    flex-direction: column;
   }
 }
 
@@ -126,10 +133,7 @@ img {
         margin: 5px 0;
     }
 
-    #breadcrumbs {
-      align-content: center;
-      align-self: center;
-    }
+
   }
 
 
@@ -156,8 +160,8 @@ img {
     }
 
     #breadcrumbs {
-      align-content: flex-start;
-      align-self: flex-start;
+      align-content: center;
+      align-self: center;
       padding: 2px 25px;
       /* box-shadow: 100px 0px black;  Fixes blank space to right of banner */
       flex-direction: column;
