@@ -42,6 +42,7 @@
 
   form {
     display: flex;
+    justify-content: center;
   }
 
 input {
@@ -102,7 +103,7 @@ img {
 
 @media only screen and (max-width: 800px) { /* for iPads */
   .header {
-      padding: 20px 20px;
+
       margin: auto;
       text-align: center;
       padding-bottom: 20px;

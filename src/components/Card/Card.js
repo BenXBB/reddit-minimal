@@ -37,7 +37,7 @@ function Card(props) {
                 <div className="cardHeader">
                     <div className="cardSubreddit">r/{props.article.subreddit}</div>
                     <a href={linkToRedditURL} rel="noreferrer" target="_blank"><h1>{shortenedTitle}</h1><span>...more</span></a>
-                    <p>{props.article.selftext}</p>
+                    <p id="articleSelfText">{props.article.selftext}</p>
                     {((props.article.thumbnail === "self") ? // ternary operator that detects if thumbnail is included
                     ""
                     : 

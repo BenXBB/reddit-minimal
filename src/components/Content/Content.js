@@ -17,12 +17,9 @@ function Content(props) {
   }
 
 // Vars for storing the hot, popular and trending icons
-  var hotIcon = "https://cdn-icons.flaticon.com/png/512/2319/premium/2319286.png?token=exp=1635969908~hmac=72f5228b0ea4f29aa00a796c7695bb76";
-  var activeHot = hotIcon;
-  var trendingIcon = "https://cdn-icons.flaticon.com/png/512/1350/premium/1350367.png?token=exp=1635970594~hmac=ccc5df86ef26393139986d53b8f54cbd";
-  var activeTrending = trendingIcon;
-  var popularIcon = "https://cdn-icons-png.flaticon.com/512/1879/1879440.png";
-  var activePopular = popularIcon;
+  var activeHot = "https://styles.redditmedia.com/t5_5btn0k/styles/communityIcon_a5o7j7j7ifz71.jpeg?width=256&format=pjpg&s=f875ac79896d7d00c2c85dca25d3b9bda94a1cf1";
+  var activeTrending = "https://styles.redditmedia.com/t5_311a2/styles/communityIcon_otxfj4hsc9821.png";
+  var activePopular = "https://styles.redditmedia.com/t5_2qh3l/styles/communityIcon_fmygcobc22z81.png";
 
 
     return (
@@ -37,7 +34,7 @@ function Content(props) {
                 <img onClick={toggleTopCommunities} alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTE4LjgzMzMzLDQ3LjA4MzMzdjE4LjgzMzMzaDE4OC4zMzMzM3YtMTguODMzMzN6TTE4LjgzMzMzLDEwMy41ODMzM3YxOC44MzMzM2gxODguMzMzMzN2LTE4LjgzMzMzek0xOC44MzMzMywxNjAuMDgzMzN2MTguODMzMzNoMTg4LjMzMzMzdi0xOC44MzMzM3oiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="/>
                 <ul id="topCommunities">
                     <li className="communityList" onClick={props.getAskReddit}><CommunityCard topic="r/AskReddit" icon="https://styles.redditmedia.com/t5_2qh1i/styles/communityIcon_tijjpyw1qe201.png?width=256&s=4e76eadc662b8155a93d4d7487a6d3acb35f4334" /></li>
-                    <li className="communityList" onClick={props.getMovies}><CommunityCard topic="r/Movies" icon="https://styles.redditmedia.com/t5_2qh3s/styles/communityIcon_oy4mm1w4ron61.jpg?width=256&s=e18c0d65c6b9159c5c34de859861d4a0cb99804d" /></li>
+                    <li className="communityList" onClick={props.getMovies}><CommunityCard topic="r/Movies" icon="https://styles.redditmedia.com/t5_2qh3s/styles/communityIcon_yq9ah8eniar81.jpg?width=256&format=pjpg&s=f85b7a96d41be49341fb41f7df9c5e563c5460e0" /></li>
                     <li className="communityList" onClick={props.getGaming}><CommunityCard topic="r/Gaming" icon="https://styles.redditmedia.com/t5_2qh03/styles/communityIcon_1isvxgkk7hw51.png?width=256&s=b2c4017083ea0176a3dd4837f6e009bbc8384f15" /></li>
                     <li className="communityList" onClick={props.getShowerThoughts}><CommunityCard topic="r/ShowerThoughts" icon="https://styles.redditmedia.com/t5_2szyo/styles/communityIcon_o033kp1bgrj71.png?width=256&s=d9cf508e8d75afe155697e25ebfd71d297185367" /></li>
                     <li className="communityList" onClick={props.getGothStyle}><CommunityCard topic="r/GothStyle" icon="https://styles.redditmedia.com/t5_2z786/styles/communityIcon_s8b9dhn4uju41.png?width=256&s=414029aadf786842fd4a5d7e9e72f0af2cab99b1" /></li>
